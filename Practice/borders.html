@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Borders Practice</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .container-child {
+            height: 200px;
+            width: 200px;
+            background-color: hotpink;
+            margin: 20px;
+        }
+
+        .solid-border {
+            border: 2px solid black;
+        }
+
+        .dashed-border {
+            border: 2px dashed black;
+        }
+
+        .dotted-border {
+            border: 2px dotted black;
+        }
+
+        .double-border {
+            border: 10px double black;
+        }
+
+        .groove-border {
+            border: 10px groove black;
+        }
+
+        .ridge-border {
+            border: 10px ridge black;
+        }
+
+        .inset-border {
+            border: 10px inset black;
+        }
+
+        .outset-border {
+            border: 10px outset black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-child solid-border">
+        </div>
+        <div class="container-child dashed-border">
+        </div>
+        <div class="container-child dotted-border">
+        </div>
+        <div class="container-child double-border">
+        </div>
+        <div class="container-child groove-border">
+        </div>
+        <div class="container-child ridge-border">
+        </div>
+        <div class="container-child inset-border">
+        </div>
+        <div class="container-child outset-border">
+        </div>
+    </div>
+</body>
+
+</html>
