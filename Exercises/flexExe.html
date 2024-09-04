@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex Practice</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .container3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .container4 {
+            display: flex;
+            height: 50px;
+            border-style: solid;
+            border-color: gray;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .container1-box1 {
+            background-color: lightblue;
+            width: 200px;
+        }
+
+        .container1-box2 {
+            background-color: lightpink;
+            width: 75px;
+        }
+
+        .container2-box1 {
+            background-color: lightblue;
+            width: 50px;
+        }
+
+        .container2-box2 {
+            background-color: lightpink;
+            flex: 1;
+        }
+
+        .container2-box3 {
+            background-color: lightblue;
+            width: 75px;
+        }
+
+        .container3-box1 {
+            background-color: lightpink;
+            width: 100px;
+        }
+
+        .container3-box2 {
+            background-color: lightpink;
+            width: 100px;
+        }
+
+        .container3-box3 {
+            background-color: lightpink;
+            width: 100px;
+        }
+
+        .container3-box4 {
+            background-color: lightpink;
+            width: 100px;
+        }
+
+        .container4-box1 {
+            background-color: lightsalmon;
+        }
+
+        .container4-box2 {
+            background-color: lightsalmon;
+        }
+
+        .card-container {
+            border-style: solid;
+            border-color: lightgray;
+            border-width: 1px;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .attributes {
+
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            vertical-align: middle;
+
+        }
+
+        .innerAttributes {
+            width: 45px;
+            color: white;
+            background-color: hsl(212, 100%, 50%);
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bolder;
+            height: 30px;
+            vertical-align: middle;
+
+        }
+
+        .bar-container {
+            display: flex;
+            background-color: rgb(180, 0, 180);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .home-txt {
+            margin-left: 20px;
+            width: 50px;
+            background-color: antiquewhite;
+        }
+
+        .search-box {
+            flex: 1;
+            background-color: white;
+            margin-left: 20px;
+            width: 100px;
+        }
+
+        .background-block {
+            background-image: url(thumbmails/cat.webp);
+            height: 100px;
+            background-attachment: scroll;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container1-box1">200px</div>
+        <div class="container1-box2">75px</div>
+    </div>
+
+    <div class="container">
+        <div class="container2-box1">item1</div>
+        <div class="container2-box2">item2</div>
+        <div class="container2-box3">item3</div>
+    </div>
+
+    <div class="container3">
+        <div class="container3-box1">item1</div>
+        <div class="container3-box2">item2</div>
+        <div class="container3-box3">item3</div>
+        <div class="container3-box4">item4</div>
+    </div>
+
+    <div class="container4">
+        <div class="container4-box1">item1</div>
+        <div class="container4-box2">item2</div>
+    </div>
+
+    <hr />
+    <br />
+    <br />
+
+    <div class="card-container">
+
+        <div class="attributes">
+            Home
+            <div class="innerAttributes">
+                14
+            </div>
+        </div>
+        <div class="attributes">
+            Notifications
+            <div class="innerAttributes">
+                3
+            </div>
+        </div>
+        <div class="attributes">
+            Messages
+            <div class="innerAttributes">
+                5
+            </div>
+        </div>
+
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="bar-container">
+        <div class="home-txt">Home</div>
+        <div class="search-box"><input type="search" placeholder="Search"></div>
+        <div class="download-btn"><button>Download</button></div>
+    </div>
+
+    <div>
+        <div class="background-block">This is for background image</div>
+    </div>
+
+    <div>
+        <div style="
+        height : 100px;
+        width : 100px;
+        background-color : powderblue;
+        margin : 20px 10px;
+        border : 10px solid  black;
+       
+        text-align : center;
+
+        ">This is Div </div>
+    </div>
+</body>
+
+</html>
